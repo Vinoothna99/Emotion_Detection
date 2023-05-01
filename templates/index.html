@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../styles.css') }}">
+    <title>EvolutionAI</title>
+</head>
+  
+  <body style="background-image: url('https://wallpaperaccess.com/full/1846937.jpg'); background-size: 100% auto; background-repeat: no-repeat;">
+    <div class="App" style="text-align: center;">
+      <header class="App-header">
+        <img src="https://www.jing.fm/clipimg/full/64-640266_face-scan-vector-face-recognition-png-logo.png" class="App-logo" alt="logo" style="height: 40vmin;
+        pointer-events: none;" />
+        <p style="color: white;
+        mix-blend-mode: difference; font-size: xxx-large; font-weight: 900; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+          Click Below to try our Emotion Detection Model
+        </p>
+        <form action="{{url_for('after')}}" method='POST' class="App-Linl">
+            <input type="submit" name="btn" style="width: 200px; align-self: center; display: inline-block;
+            background-color: #ffffff;
+            padding: 10px;
+            color: #000000;
+            text-align: center;
+            border: 4px double #cccccc;
+            border-radius: 10px;
+            font-size: 28px;
+            font-weight: 400;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            cursor: pointer; 
+            margin: 5px;
+            border-radius: 10px;" value="Click Me!">
+        </form>
+      </header>
+    </div>    
+  </body>
+</html>
